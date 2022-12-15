@@ -83,4 +83,16 @@ employeeLogEntry=(datatosend:any)=>
   return this.http.post("http://localhost:8080/employeelogentry",datatosend)
 }
 
+viewLeaveRequestAdmin=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/leaveSearchAdmin",datatosend)
 }
+
+approveLeave=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/leaveupdateStatus",datatosend)
+}
+
+}
+
+

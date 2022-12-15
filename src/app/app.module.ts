@@ -26,6 +26,7 @@ import { SecurityProfileComponent } from './security-profile/security-profile.co
 import { VisitorLogEntryComponent } from './visitor-log-entry/visitor-log-entry.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 import { EmployeeLogEntryComponent } from './employee-log-entry/employee-log-entry.component';
+import { AdminLeaveRequestsViewComponent } from './admin-leave-requests-view/admin-leave-requests-view.component';
 
 const myRoutes : Routes =[
 
@@ -76,6 +77,9 @@ const myRoutes : Routes =[
 },
 {
   path:"employeelogentry",component:EmployeeLogEntryComponent
+},
+{
+  path:"leaverequestview",component:AdminLeaveRequestsViewComponent
 }
 
 
@@ -104,7 +108,8 @@ const myRoutes : Routes =[
     SecurityProfileComponent,
     VisitorLogEntryComponent,
     SecurityNavbarComponent,
-    EmployeeLogEntryComponent
+    EmployeeLogEntryComponent,
+    AdminLeaveRequestsViewComponent
   ],
   imports: [
     BrowserModule,
