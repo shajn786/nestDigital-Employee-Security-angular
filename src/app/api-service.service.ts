@@ -22,7 +22,14 @@ export class ApiServiceService {
   {
     return this.http.post("http://localhost:8080/searchemp",datatosend)
   }
-
+  employeeAuth=(datatosend:any)=>
+  {
+    return this.http.post("http://localhost:8080/employeeauth",datatosend)
+  }
+  getEmpProfileData=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeeDetails",datatosend)
+}
   
 deleteEmployee=(datatosend:any)=>
 {
@@ -45,5 +52,10 @@ deleteSecurity=(datatosend:any)=>
 {
   return this.http.post("http://localhost:8080/securitydelete",datatosend)
 }
+
+leaveApplication=(datatosend:any)=>
+  {
+     return this.http.post("http://localhost:8080/leavapplication",datatosend)
+  }
 
 }
