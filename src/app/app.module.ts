@@ -21,6 +21,8 @@ import { EmployeeProfileComponent } from './employee-profile/employee-profile.co
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 import { EmpLeaveStatusComponent } from './emp-leave-status/emp-leave-status.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
 
 const myRoutes : Routes =[
 
@@ -59,6 +61,12 @@ const myRoutes : Routes =[
 },
 {
   path:"leavestatus",component:EmpLeaveStatusComponent
+},
+{
+  path:"securitylogin",component:SecurityLoginComponent
+},
+{
+  path:"securityprofile",component:SecurityProfileComponent
 }
 
 ]
@@ -81,7 +89,9 @@ const myRoutes : Routes =[
     EmployeeProfileComponent,
     EmployeeNavbarComponent,
     LeaveApplicationComponent,
-    EmpLeaveStatusComponent
+    EmpLeaveStatusComponent,
+    SecurityLoginComponent,
+    SecurityProfileComponent
   ],
   imports: [
     BrowserModule,
