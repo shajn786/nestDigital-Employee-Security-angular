@@ -58,4 +58,9 @@ leaveApplication=(datatosend:any)=>
      return this.http.post("http://localhost:8080/leavapplication",datatosend)
   }
 
+leaveStataus=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/empleavestatus",datatosend)
+}
+
 }
