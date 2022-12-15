@@ -16,6 +16,10 @@ import { AddSecurityComponent } from './add-security/add-security.component';
 import { SecurityViewallComponent } from './security-viewall/security-viewall.component';
 import { AdminSecurityNavbarComponent } from './admin-security-navbar/admin-security-navbar.component';
 import { SecuritySearchComponent } from './security-search/security-search.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 
 const myRoutes : Routes =[
 
@@ -42,6 +46,15 @@ const myRoutes : Routes =[
 },
 {
   path:"searchsecurity",component:SecuritySearchComponent
+},
+{
+  path:"employeelogin",component:EmployeeLoginComponent
+},
+{
+  path:"emprofile",component:EmployeeProfileComponent
+},
+{
+  path:"leaveapplication",component:LeaveApplicationComponent
 }
 
 ]
@@ -59,7 +72,11 @@ const myRoutes : Routes =[
     AddSecurityComponent,
     SecurityViewallComponent,
     AdminSecurityNavbarComponent,
-    SecuritySearchComponent
+    SecuritySearchComponent,
+    EmployeeLoginComponent,
+    EmployeeProfileComponent,
+    EmployeeNavbarComponent,
+    LeaveApplicationComponent
   ],
   imports: [
     BrowserModule,
