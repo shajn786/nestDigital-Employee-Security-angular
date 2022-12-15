@@ -63,4 +63,14 @@ leaveStataus=(datatosend:any)=>
   return this.http.post("http://localhost:8080/empleavestatus",datatosend)
 }
 
+securityAuth=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/securityauth",datatosend)
+}
+
+getSecProfileData=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/securitydetails",datatosend)
+}
+
 }
