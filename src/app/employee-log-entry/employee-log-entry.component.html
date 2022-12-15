@@ -1,0 +1,37 @@
+<app-security-navbar></app-security-navbar>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<div class="row g-3">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+        <h1 style="color:brown">Employee Log Entry</h1>
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label style="font-size:larger" for="" class="form-label">Empcode </label>
+        <input name="empcode" [(ngModel)]="empcode" type="text" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label style="font-size:larger" for="" class="form-label">Entry Time </label>
+        <input type="time" name="entry_time" [(ngModel)]="entry_time"id="" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label style="font-size:larger" for="" class="form-label">Exit Time </label>
+        <input type="time" name="exit_time" [(ngModel)]="exit_time" id="" class="form-control">
+    </div>
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label style="font-size:larger" for="" class="form-label"> Date</label>
+        <input type="date" name="date"  [(ngModel)]="date" id="" class="form-control">
+    </div>
+
+   
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <button (click)="readValues()"  class="btn btn-success"> Apply</button>
+    </div>
+   
+</div>
+
+        </div>
+    </div>
+</div>

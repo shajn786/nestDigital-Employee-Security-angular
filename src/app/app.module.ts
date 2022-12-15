@@ -23,6 +23,9 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
 import { EmpLeaveStatusComponent } from './emp-leave-status/emp-leave-status.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SecurityProfileComponent } from './security-profile/security-profile.component';
+import { VisitorLogEntryComponent } from './visitor-log-entry/visitor-log-entry.component';
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
+import { EmployeeLogEntryComponent } from './employee-log-entry/employee-log-entry.component';
 
 const myRoutes : Routes =[
 
@@ -67,7 +70,14 @@ const myRoutes : Routes =[
 },
 {
   path:"securityprofile",component:SecurityProfileComponent
+},
+{
+  path:"visitorlogentry",component:VisitorLogEntryComponent
+},
+{
+  path:"employeelogentry",component:EmployeeLogEntryComponent
 }
+
 
 ]
 
@@ -91,7 +101,10 @@ const myRoutes : Routes =[
     LeaveApplicationComponent,
     EmpLeaveStatusComponent,
     SecurityLoginComponent,
-    SecurityProfileComponent
+    SecurityProfileComponent,
+    VisitorLogEntryComponent,
+    SecurityNavbarComponent,
+    EmployeeLogEntryComponent
   ],
   imports: [
     BrowserModule,
