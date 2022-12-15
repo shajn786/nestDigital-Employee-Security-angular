@@ -12,7 +12,9 @@ export class LeaveApplicationComponent {
   end_date=""
   reason=""
   status=""
+  updated=""
   empid:any=""
+
 
   constructor(private api : ApiServiceService)
   {
@@ -21,7 +23,7 @@ export class LeaveApplicationComponent {
 
   readValues=()=>
   {
-    let data:any = {"empid":this.empid,"leaveType":this.leaveType,"start_date":this.start_date,"end_date":this.end_date,"reason":this.reason,"status":0}
+    let data:any = {"empid":this.empid,"leaveType":this.leaveType,"start_date":this.start_date,"end_date":this.end_date,"reason":this.reason,"status":0,"updated":0}
     console.log(data)
     this.api.leaveApplication(data).subscribe(
       

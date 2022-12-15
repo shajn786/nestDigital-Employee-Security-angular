@@ -1,0 +1,60 @@
+<app-admin-employee-navbar></app-admin-employee-navbar>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3 ">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h1 style="color:brown">Search Employee</h1>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Date</label>
+                    <input type="date"  name="applyingdate" [(ngModel)]="applyingdate" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="search()" class="btn btn-success">Search</button>
+                </div>
+            </div>
+
+
+            <div class="row g-3 mt-4">
+                
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor ="let i of leaveData">
+                   
+                    <ng-container *ngIf = "i.updated == 0; then display"></ng-container>
+                    <ng-template #display>
+                    
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://png.pngtree.com/png-vector/20220901/ourmid/pngtree-company-employee-avatar-icon-wearing-a-suit-png-image_6133899.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Empid : {{i.empid}}</h5>
+                              <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Reason : {{i.reason}}</li>
+                              <li class="list-group-item">From Date :  {{i.start_date}}</li>
+                              <li class="list-group-item">To Date : {{i.end_date}}</li>
+                              <li class="list-group-item">Number of days : {{i.no_of_days}}</li>
+                              <li class="list-group-item">Leave Type : {{i.leaveType}}</li>
+                              <li class="list-group-item"><button (click)="approve(i.empid)" class="btn btn-success">Approve</button></li>
+                              <li class="list-group-item"><button (click)="rejected(i.empid)" class="btn btn-danger">Reject</button></li>
+    
+                            </ul>
+                           
+                          </div>
+
+
+                    </ng-template>
+                   
+                  
+                    
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
