@@ -73,4 +73,14 @@ getSecProfileData=(datatosend:any)=>
   return this.http.post("http://localhost:8080/securitydetails",datatosend)
 }
 
+visitorLogEntry=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/visitorlogentry",datatosend)
+}
+
+employeeLogEntry=(datatosend:any)=>
+{
+  return this.http.post("http://localhost:8080/employeelogentry",datatosend)
+}
+
 }
