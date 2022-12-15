@@ -1,0 +1,52 @@
+<app-admin-security-navbar></app-admin-security-navbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+               <div class="col col-12 col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                   <h1 style="color:brown">Security Details</h1>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    <table class="table">
+                        <thead>
+                          <tr>
+                          
+                            <th scope="col"> Security Code</th>
+                            <th scope="col">Security  Name</th>
+                            
+                            <th scope="col">Address</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Password</th>
+
+                         
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of securitydata" >
+                            
+                            
+                            <td>{{i.scode}}</td>
+                            <td>{{i.sname}}</td>
+                            <td>{{i.address}}</td>
+                            <td>{{i.mobno}}</td>
+                           
+                            <td>{{i.username}}</td>
+                            <td>{{i.password}}</td>
+                            
+                           
+                          </tr>
+                        
+                        </tbody>
+                      </table>     
+              
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
