@@ -35,9 +35,9 @@ export class AdminLeaveRequestsViewComponent {
     )
   }
 
-  approve=(empid:any)=>
+  approve=(id:any)=>
   {
-     let data:any = {"empid":empid,"status":1,"updated":1}
+     let data:any = {"id":id,"status":1,"updated":1}
      this.api.approveLeave(data).subscribe(
       
 
@@ -58,9 +58,9 @@ export class AdminLeaveRequestsViewComponent {
      )
   }
 
-  rejected=(empid:any)=>
+  rejected=(id:any)=>
   {
-     let data:any = {"empid":empid,"status":-1,"updated":1}
+     let data:any = {"id":id,"status":-1,"updated":1}
      this.api.approveLeave(data).subscribe(
       
 

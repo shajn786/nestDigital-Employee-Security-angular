@@ -1,0 +1,58 @@
+<app-admindashboard-navbar></app-admindashboard-navbar>
+
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+               <div class="col col-12 col-sm-12 col-md-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                   <h1 style="color:brown">Visitor Log</h1>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    <table class="table table-striped">
+                        <thead>
+                          <tr>
+                          
+                            <th scope="col"> Name of Visitor</th>
+                            <th scope="col">Purpose</th>
+                            
+                            <th scope="col">Whom to Meet</th>
+                            <th scope="col">Entry Time</th>
+                            <th scope="col">Exit Time</th>
+
+                            <th scope="col">Date</th>
+
+
+                         
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor ="let i of visitorLogData" >
+                            
+                            
+                            <td>{{i.name}}</td>
+                            <td>{{i.purpose}}</td>
+                            <td>{{i.whom_to_meet}}</td>
+                            <td>{{i.entry_time}}</td>
+                           
+                            <td>{{i.exit_time}}</td>
+                            <td>{{i.date}}</td>
+                           
+                            
+                           
+                          </tr>
+                        
+                        </tbody>
+                      </table>     
+              
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
