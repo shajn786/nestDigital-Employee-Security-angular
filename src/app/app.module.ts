@@ -27,11 +27,19 @@ import { VisitorLogEntryComponent } from './visitor-log-entry/visitor-log-entry.
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 import { EmployeeLogEntryComponent } from './employee-log-entry/employee-log-entry.component';
 import { AdminLeaveRequestsViewComponent } from './admin-leave-requests-view/admin-leave-requests-view.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
+import { AdmindashboardNavbarComponent } from './admindashboard-navbar/admindashboard-navbar.component';
+import { EmployeeLogComponent } from './employee-log/employee-log.component';
 
 const myRoutes : Routes =[
 
+  {
+     path:"",component:HomePageComponent
+  },
+
 {
-  path:"",component:AdminLoginComponent
+  path:"adminlogin",component:AdminLoginComponent
 },
 {
   path:"adminoptions",component:AdminOptionsComponent
@@ -80,8 +88,13 @@ const myRoutes : Routes =[
 },
 {
   path:"leaverequestview",component:AdminLeaveRequestsViewComponent
+},
+{
+  path:"visitorlog",component:VisitorLogComponent
+},
+{
+  path:"employeelog",component:EmployeeLogComponent
 }
-
 
 ]
 
@@ -109,7 +122,11 @@ const myRoutes : Routes =[
     VisitorLogEntryComponent,
     SecurityNavbarComponent,
     EmployeeLogEntryComponent,
-    AdminLeaveRequestsViewComponent
+    AdminLeaveRequestsViewComponent,
+    HomePageComponent,
+    VisitorLogComponent,
+    AdmindashboardNavbarComponent,
+    EmployeeLogComponent
   ],
   imports: [
     BrowserModule,

@@ -93,6 +93,16 @@ approveLeave=(datatosend:any)=>
   return this.http.post("http://localhost:8080/leaveupdateStatus",datatosend)
 }
 
+visitorLog=()=>
+{
+  return this.http.get("http://localhost:8080/visitorlog")
+}
+
+employeeLog=()=>
+{
+  return this.http.get("http://localhost:8080/employeelog")
+}
+
 }
 
 

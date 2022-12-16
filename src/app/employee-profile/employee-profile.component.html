@@ -1,31 +1,21 @@
 <app-employee-navbar></app-employee-navbar>
-<div class="container mt-4">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center" >
-                   <h1>Profile</h1>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" >
-                   
-                  
-                    <div class="card" >
-                        
-                        <div class="card-body">
-                          <h5 class="card-title">Name : {{userdata[0].empname}}</h5>
-                          <p class="card-text"></p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">Address : {{userdata[0].address}}</li>
-                          <li class="list-group-item">Phone Number :{{userdata[0].mobno}} </li>
-                          <li class="list-group-item">Email : {{userdata[0].email}}</li>
-                        </ul>
-                       
+<div class="container">
+  <div class="row">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+          <div class="row">
+              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center align-items-center mt-5">
+                  <div style="width: 25rem;" class="card mb-4">
+                      <div class="card-body text-center">
+                          <img  src="https://cdn5.vectorstock.com/i/1000x1000/16/59/young-and-successful-business-man-cartoon-employee-vector-15281659.jpg"
+                              alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                          <h5 class="my-3">{{userdata[0].empname}}</h5>
+                          <p class="text-muted mb-1">Email: {{userdata[0].address}}</p>
+                          <p class="text-muted mb-1">Phone: {{userdata[0].mobno}}</p>
+                          <p class="text-muted mb-1">Address: {{userdata[0].address}}</p>
+                          <p class="text-muted mb-1">Username: {{userdata[0].username}}</p>
                       </div>
-                    
-                </div>
-               
-            </div>
-        </div>
-    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
